@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "quarto"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: references.qmd
+        text: References
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - minty
+    css: styles.css
+    toc: true
+
+
+

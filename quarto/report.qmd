@@ -1,0 +1,23 @@
+---
+title: "Report"
+format:
+    pdf: default
+    html: default
+author: "Kimberly Cardinale and Carl Yu"
+bibliography: references.bib
+---
+
+# Analyzing population dynamics of [INSERT COUNTRIES]
+## Kimberly Cardinale () and Carl Yu (2550364)
+
+# Introduction
+
+# Data description
+
+# Data analysis
+
+# Results and Discussion
+
+# Conclusion and further reading
+
+# References
