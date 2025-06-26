@@ -3,14 +3,21 @@ project:
   output-dir: ../docs
 
 website:
-  title: "quarto"
+  title: "Analyzing Population Dynamics"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: part1.qmd
+        text: Adolescent Fertility Rate vs. Population Growth
+      - href: part2.qmd
+        text: Age dependency vs. Life expectancy
+      - href: part3.qmd
+        text: Births Attended by Skilled Health Staff vs. Infant Mortality Rate
+      - href: conclusion.qmd
+        text: Conclusion and Further Readings
       - href: references.qmd
         text: References
-      - about.qmd
 
 format:
   html:

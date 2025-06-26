@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Analyzing Population Dynamics",
+    "objectID": "part3.html",
+    "href": "part3.html",
+    "title": "Births Attended by Skilled Health Staff vs. Infant Mortality Rate",
     "section": "",
-    "text": "Introduction\nINSERT CONTENT\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "HEADING\nINSERT CONTENT\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "part1.html",
+    "href": "part1.html",
+    "title": "Adolescent Fertility Rate vs. Population Growth",
+    "section": "",
+    "text": "HEADING\nINSERT CONTENT\n\n\n\n\n\n\n\n\n\nAt the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.\n\n\n\n\n\n\n\n\n\nOn average, low income countries have the experienced the highest change population growth rates, and is the only income group that had a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023, with upper middle income countries on average having the greatest decline in population growth. Something something demographic transition\n\n\n\n\n\n\n\n\n\nAll income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa."
   },
   {
     "objectID": "about.html",
@@ -12,6 +19,20 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Analyzing Population Dynamics",
+    "section": "",
+    "text": "Introduction\nINSERT CONTENT\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "part2.html",
+    "href": "part2.html",
+    "title": "Age dependency vs. Life expectancy",
+    "section": "",
+    "text": "Introduction\n\n\n\n\n\n\n\n\n\nAt the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa."
   },
   {
     "objectID": "references.html",

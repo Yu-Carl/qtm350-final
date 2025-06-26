@@ -1,10 +1,8 @@
 ---
-title: "Analyzing Population Dynamics"
+title: "Births Attended by Skilled Health Staff vs. Infant Mortality Rate"
 ---
 
-# Introduction
+# HEADING
 INSERT CONTENT
-
-
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

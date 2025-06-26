@@ -1,0 +1,29 @@
+---
+title: "Age dependency vs. Life expectancy"
+---
+
+# Introduction
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/2scatter.png")
+```
+
+At the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/2expectancy_across_income.png")
+```
+
+
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/2faceted.png")
+```
+
+All income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa.

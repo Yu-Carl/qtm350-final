@@ -1,0 +1,30 @@
+---
+title: "Adolescent Fertility Rate vs. Population Growth"
+---
+
+# HEADING
+INSERT CONTENT
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/1scatter.png")
+```
+
+At the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/1population_across_income.png")
+```
+
+On average, low income countries have the experienced the highest change population growth rates, and is the only income group that had a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023, with upper middle income countries on average having the greatest decline in population growth. Something something demographic transition
+
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/1faceted.png")
+```
+
+All income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa.
