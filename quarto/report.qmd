@@ -7,17 +7,92 @@ author: "Kimberly Cardinale and Carl Yu"
 bibliography: references.bib
 ---
 
-# Analyzing population dynamics of [INSERT COUNTRIES]
-## Kimberly Cardinale () and Carl Yu (2550364)
+# A Comprehensive Analysis of Worldwide Population Dynamic Trends
+## Kimberly Cardinale (2548934) and Carl Yu (2550364)
 
 # Introduction
+In this project, we examine the relationships between key indicators of public health and population dynamics across countries using data from the World Bank’s World Development Indicators (WDI) database. Our goal is to understand how certain demographic, health, and fertility-related measures are related, and what patterns emerge across different regions or income levels over time.
 
-# Data description
 
-# Data analysis
+# Data Description
+To guide our analysis, we grouped six indicators into three pairs:
 
-# Results and Discussion
+1. Adolescent fertility rate (births per 1,000 women ages 15–19) and population growth (annual %) to explore how youth fertility might contribute to overall population change.
+- Adolescent fertility rate serves as an indicator of reproductive health and education access.
+- Population growth reflects demographic shifts and may be influenced by fertility trends.
 
-# Conclusion and further reading
+2. Age dependency ratio (% of working-age population) and life expectancy at birth (years) to understand how population age structure relates to general health and longevity.
+- Age dependency ratio measures the economic burden on the working population.
+- Life expectancy is a common proxy for overall population health.
+
+3. Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births) to assess how healthcare access during childbirth impacts early-life survival.
+- Skilled birth attendance indicates healthcare quality and accessibility during delivery.
+- Infant mortality rate reflects child health outcomes and overall healthcare effectiveness.
+
+By integrating SQL for data cleaning and transformation and Python for visualization and modeling, we aim to show meaningful patterns and trends within these pairs. Our analysis also considers regional and income-level differences where relevant. Through this approach, we hope to provide insights into how social and healthcare factors contribute to broader population and health outcomes worldwide.
+
+
+# Data Analysis, Results, and Discussion
+
+## Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)
+![Figure 1](../figures/change_skilled_births_vs_infant_mortality.png)
+
+To explore the relationship between maternal healthcare access and infant survival outcomes, we plotted the change in births attended by skilled health staff against the change in infant mortality rates between 2000 and 2019.
+
+Each point in the scatterplot represents a region, color-coded.
+
+We used the following metrics:
+
+- X-axis: Change in the percentage of births attended by skilled health staff (%)
+- Y-axis: Change in infant mortality (per 1,000 live births)
+
+This visual helps assess whether increases in skilled birth attendance are associated with better infant health outcomes, and whether this trend is consistent across regions.
+
+Many countries that experienced an increase in skilled birth attendance from 2000 to 2019 also saw a decrease in infant mortality (or greater change in infant mortality), especially in Sub-Saharan Africa, South Asia, and East Asia & Pacific. This suggests a negative correlation: as more births are attended by skilled health staff, fewer infants die.
+
+
+![Figure 2](../figures/average_infant_mortality_by_region.png)
+
+To understand trends in infant survival across global regions, we plotted average infant mortality rates from 2000 to 2019.
+
+Each line represents a different world region, showing changes in infant deaths per 1,000 live births over time.
+
+Key insights from this visualization include:
+
+- All regions experienced a decline in infant mortality rates over the 20-year period.
+- Sub-Saharan Africa had the highest rates throughout, though it also saw significant improvement—from around 80 deaths per 1,000 live births in 2000 to below 50 by 2019.
+- South Asia also made significant progress closing the gap with regions that have lower infant mortality rates.
+- Regions like Europe & Central Asia and North America maintained the lowest infant mortality rates, with steady improvements, though the overall changes were smaller.
+
+These patterns reflect global progress in child health and survival, while highlighting persistent disparities across regions. The overall downward trend is consistent with increased access to healthcare and maternal services observed during this time.
+
+
+![Figure 3](../figures/average_skilled_births_by_region.png)
+
+To track improvements in maternal healthcare access globally, we visualized the average percentage of births attended by skilled health staff across world regions from 2000 to 2019.
+
+Each line represents a region, illustrating how skilled birth attendance has evolved over time.
+
+Key insights from the figure include:
+
+- Regions like Europe & Central Asia and North America consistently maintained near-universal skilled birth attendance, with rates close to 100% .
+- East Asia & Pacific, Latin America & Caribbean, and Middle East & North Africa also exhibited high and relatively stable skilled birth rates, typically above 90%.
+- Sub-Saharan Africa and South Asia, which started with the lowest skilled birth attendance rates in 2000, showed substantial improvement over the two decades. South Asia, in particular, saw an increase from around 35% to over 70%.
+
+The upward trends in these regions reflect significant investments in maternal health services and broader healthcare access.
+
+This visualization highlights regional disparities in maternal healthcare but also showcases meaningful global progress, particularly in regions with historically lower access to skilled care during childbirth.
+
+
+# Conclusion and Further Reading
+
+This project investigates the relationships between public health and population dynamics using World Bank data to reveal patterns across regions and income levels. Focusing on three indicator pairs, we analyze how demographic and health factors interact, including adolescent fertility rate and population growth, age dependency ratio and life expectancy at birth, and births attended by skilled health staff and infant mortality rates.
+
+For pair 3, the analysis shows that increased skilled birth attendance is strongly associated with declines in infant mortality globally, with significant progress in regions like Sub-Saharan Africa and South Asia despite ongoing disparities. A systematic review of 41 African countries demonstrated that a 10% increase in skilled birth attendance corresponded with a 6% reduction in neonatal mortality, highlighting the critical impact of skilled healthcare during childbirth on infant survival (Berhan and Berhan, 2014). Similarly, a national survey in Lesotho found that births not attended by skilled health personnel had twice the risk of neonatal death compared to those with skilled attendants, directly supporting the finding that increased skilled birth attendance is linked to lower infant mortality rates (Baruwa et al, 2021).
+
 
 # References
+
+Baruwa, O. J., Amoateng, A. Y., & Mkwananzi, S. (2021). Association between type of birth attendants and neonatal mortality: Evidence from a National survey. African Health Sciences, 21(4), 1870-6.
+
+Berhan, Y., & Berhan, A. (2014). Skilled health personnel attended delivery as a proxy indicator for maternal and perinatal mortality: a systematic review. Ethiopian journal of health sciences, 24, 69-80.
