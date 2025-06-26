@@ -21,10 +21,9 @@ website:
 
 format:
   html:
-    theme:
-      - minty
-    css: styles.css
+    theme: default
     toc: true
-
+    page-layout: article
+    number-sections: true
 
 

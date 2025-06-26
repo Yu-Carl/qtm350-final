@@ -10,7 +10,7 @@ from IPython.display import Image
 Image("../figures/2scatter.png")
 ```
 
-At the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.
+The countries belonging the regions of Sub-Saharan Africa and Europe & Central Asia share the most similarities with other countries within their own regions. Both these regions have experienced a relatively small change in age dependency, while most other regions seem to have undergone a more significant decrease in age dependency. Globally, all countries experienced an increase in life expectancy, with Europe & Central Asia in particular having experienced the smallest change.
 
 ```{python}
 #| echo: false
@@ -18,7 +18,7 @@ from IPython.display import Image
 Image("../figures/2expectancy_across_income.png")
 ```
 
-
+On average, high income countries have experienced the smallest increase while lower middle income countries have experienced the greatest increase on average in terms of life expectancy.
 
 ```{python}
 #| echo: false
