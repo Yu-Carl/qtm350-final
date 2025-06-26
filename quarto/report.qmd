@@ -2,7 +2,11 @@
 title: "Report"
 format:
     pdf: default
-    html: default
+    html:
+        theme: default
+        toc: true
+        page-layout: article
+navbar: false
 author: "Kimberly Cardinale and Carl Yu"
 bibliography: references.bib
 ---

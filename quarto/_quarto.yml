@@ -19,11 +19,4 @@ website:
       - href: references.qmd
         text: References
 
-format:
-  html:
-    theme: default
-    toc: true
-    page-layout: article
-    number-sections: true
-
 
