@@ -1,6 +1,6 @@
 # Codebook
 
-## 1_Adolescent fertility rate (births per 1,000 women ages 15–19).csv
+## `1_Adolescent fertility rate (births per 1,000 women ages 15–19).csv`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -13,7 +13,7 @@
 | `2023`           | Fertility rate in 2023                                   | numeric |
 
 
-## 1_Population growth (annual %).csv
+## `1_Population growth (annual %).csv`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -21,12 +21,12 @@
 | `Country Code`   | Code representing the country                            | text    |
 | `Indicator Name` | Name of the WDI Indicator                                | text    |
 | `Indicator Code` | Abbreviated code of indicator                            | text    |
-| `1960`           | Fertility rate in 1960                                   | numeric |
+| `1960`           | Population growth percentage in 1960                     | numeric |
 | ...              | One column per year from 1961-2022                       | numeric |
-| `2023`           | Fertility rate in 2023                                   | numeric |
+| `2023`           | Population growth percentage in 2023                     | numeric |
 
 
-## 2_Age dependency ratio (% of working-age population).csv
+## `2_Age dependency ratio (% of working-age population).csv`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -34,12 +34,12 @@
 | `Country Code`   | Code representing the country                            | text    |
 | `Indicator Name` | Name of the WDI Indicator                                | text    |
 | `Indicator Code` | Abbreviated code of indicator                            | text    |
-| `1960`           | Fertility rate in 1960                                   | numeric |
+| `1960`           | Age dependency ratio in 1960                             | numeric |
 | ...              | One column per year from 1961-2022                       | numeric |
-| `2023`           | Fertility rate in 2023                                   | numeric |
+| `2023`           | Age dependency ratio in 2023                             | numeric |
 
 
-## 2_Life expectancy at birth, total (years).csv
+## `2_Life expectancy at birth, total (years).csv`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -47,12 +47,12 @@
 | `Country Code`   | Code representing the country                            | text    |
 | `Indicator Name` | Name of the WDI Indicator                                | text    |
 | `Indicator Code` | Abbreviated code of indicator                            | text    |
-| `1960`           | Fertility rate in 1960                                   | numeric |
+| `1960`           | Life expectancy at birth in 1960                         | numeric |
 | ...              | One column per year from 1961-2022                       | numeric |
-| `2023`           | Fertility rate in 2023                                   | numeric |
+| `2023`           | Life expectancy at birth in 2023                         | numeric |
 
 
-## 3_Births attended by skilled health staff (% of total)
+## `3_Births attended by skilled health staff (% of total)`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -60,12 +60,12 @@
 | `Country Code`   | Code representing the country                            | text    |
 | `Indicator Name` | Name of the WDI Indicator                                | text    |
 | `Indicator Code` | Abbreviated code of indicator                            | text    |
-| `1960`           | Fertility rate in 1960                                   | numeric |
+| `1960`           | % total births attended by skilled health staff in 1960  | numeric |
 | ...              | One column per year from 1961-2022                       | numeric |
-| `2023`           | Fertility rate in 2023                                   | numeric |
+| `2023`           | % total births attended by skilled health staff in 2023  | numeric |
 
 
-## 3_Mortality rate, infant (per 1,000 live births)
+## `3_Mortality rate, infant (per 1,000 live births)`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -73,12 +73,12 @@
 | `Country Code`   | Code representing the country                            | text    |
 | `Indicator Name` | Name of the WDI Indicator                                | text    |
 | `Indicator Code` | Abbreviated code of indicator                            | text    |
-| `1960`           | Fertility rate in 1960                                   | numeric |
+| `1960`           | Infant mortality rate per 1000 live births in 1960       | numeric |
 | ...              | One column per year from 1961-2022                       | numeric |
-| `2023`           | Fertility rate in 2023                                   | numeric |
+| `2023`           | Infant mortality rate per 1000 live births in 1960       | numeric |
 
 
-# metadata.csv
+## `metadata.csv`
 
 | Variable Name    | Description                                              | Type    |
 |------------------|----------------------------------------------------------|---------|
@@ -89,7 +89,7 @@
 | `TableName`      | Name of the country                                      | text    |
 
 
-## fertility_vs_population_change
+## `fertility_vs_population_change`
 
 | Variable Name             | Description                                                                | Type    | 
 |---------------------------|----------------------------------------------------------------------------|---------|
@@ -101,7 +101,7 @@
 | `population_growth_change`| Change in population growth rate (annual %) from 1960-2023                 | numeric |
 
 
-## life_vs_dependency_change
+## `life_vs_dependency_change`
 
 | Variable Name             | Description                                                                | Type    | 
 |---------------------------|----------------------------------------------------------------------------|---------|
@@ -113,7 +113,7 @@
 | `age_dependency_change`   | Change in age dependency ratio (% working-age population) from 1960-2023   | numeric |
 
 
-## health_change_summary
+## `health_change_summary`
 
 | Variable Name             | Description                                                                | Type    | 
 |---------------------------|----------------------------------------------------------------------------|---------|
