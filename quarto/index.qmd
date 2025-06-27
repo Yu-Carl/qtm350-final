@@ -1,10 +1,28 @@
 ---
 title: "Analyzing Population Dynamics"
+bibliography: references.bib
 ---
 
+---
+
+
 # Introduction
-INSERT CONTENT
+In this project, we examine the relationships between key indicators of public health and population dynamics across countries using data from the World Bank’s World Development Indicators (WDI) database. Our goal is to understand how certain demographic, health, and fertility-related measures are related, and what patterns emerge across different regions or income levels over time.
 
 
+# Data Description
+To guide our analysis, we grouped six indicators into three pairs:
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+1. Adolescent fertility rate (births per 1,000 women ages 15–19) and population growth (annual %) to explore how youth fertility might contribute to overall population change.
+- Adolescent fertility rate serves as an indicator of reproductive health and education access.
+- Population growth reflects demographic shifts and may be influenced by fertility trends.
+
+2. Age dependency ratio (% of working-age population) and life expectancy at birth (years) to understand how population age structure relates to general health and longevity.
+- Age dependency ratio measures the economic burden on the working population.
+- Life expectancy is a common proxy for overall population health.
+
+3. Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births) to assess how healthcare access during childbirth impacts early-life survival.
+- Skilled birth attendance indicates healthcare quality and accessibility during delivery.
+- Infant mortality rate reflects child health outcomes and overall healthcare effectiveness.
+
+By integrating SQL for data cleaning and transformation and Python for visualization and modeling, we aim to show meaningful patterns and trends within these pairs. Our analysis also considers regional and income-level differences where relevant. Through this approach, we hope to provide insights into how social and healthcare factors contribute to broader population and health outcomes worldwide.

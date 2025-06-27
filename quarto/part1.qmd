@@ -1,9 +1,7 @@
 ---
 title: "Adolescent Fertility Rate vs. Population Growth"
+bibliography: references.bib
 ---
-
-# HEADING
-INSERT CONTENT
 
 ```{python}
 #| echo: false

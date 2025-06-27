@@ -39,13 +39,13 @@ By integrating SQL for data cleaning and transformation and Python for visualiza
 # Data Analysis, Results, and Discussion
 
 ## Pair 1: Adolescent Fertility Rate (births per 1000 women ages 15-19) and Population Growth (annual %)
-![Figure 1](../figures/1scatter.png)
+![Figure 1](part1_files/figure-html/cell-2-output-1.png)
 
 We first plotted the change for all countries across all region and income statuses for adolescent fertility rate and population from 1960-2023, with each point representing a country to provide a broad visualization and assess any overall trends.
 
 At the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe & Central Asia as well as East Asia & Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.
 
-![Figure 2](../figures/1population_across_income.png)
+![Figure 2](part1_files/figure-html/cell-3-output-1.png)
 
 To investigate trends population growth, we plotted a distribution of change in population growth rates according to countries' income level, independent of region[^1].
 
@@ -53,7 +53,7 @@ To investigate trends population growth, we plotted a distribution of change in 
 
 On average, low income countries have the experienced the highest change population growth rates, and is the only income group that experienced a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023, with upper middle income countries on average having the greatest decline in population growth.
 
-![Figure 3](../figures/1faceted.png)
+![Figure 3](part1_files/figure-html/cell-4-output-1.png)
 
 All income groups seem to have a similar spread of change in adolescent fertility rate with most countries experiencing a decline in fertility rate since 1960, though several high income countries from the MENA region seem have experienced exceptionally large drops. Otherwise, the overall trends exhibited low income countries are relatively similar that of lower-middle income countries, though low-middle income countries on average have experienced a slight decrease in their population growth rates as well as adolescent fertility rates.
 
@@ -62,27 +62,27 @@ A systematic analysis for the Global Burden of Disease Study in 2017 on near-glo
 
 ## Pair 2: Age dependency ratio (% of working-age population) and life expectancy at birth, total (years)
 
-![Figure 4](../figures/2scatter.png)
+![Figure 4](part2_files/figure-html/cell-2-output-1.png)
 
 We plotted the change in life expectancy and age dependency ratio for all countries across all regions and income levels together to provide an aggregate visualization. 
 
 The countries belonging the regions of Sub-Saharan Africa and Europe & Central Asia share the most similarities with other countries within their own regions. Both these regions have experienced a relatively small change in age dependency, while most other regions seem to have undergone a more significant decrease in age dependency. Globally, all countries experienced an increase in life expectancy, with Europe & Central Asia in particular having experienced the smallest change.
 
 
-![Figure 5](../figures/2expectancy_across_income.png)
+![Figure 5](part2_files/figure-html/cell-3-output-1.png)
 
 To investigate trends in life expectancy, we plotted changes in life expectancy with respect to different levels of income.
 
 High income countries experienced relatively small increase in life expectancy on average while lower-middle income countries experienced the most significant increase in life expectancy. Low income countries experienced an increase just slightly shy of that of lower-middle income countries and ahve the narrowest distribution of change. However, high income and upper-middle income countries had the widest range in life expectancy changes—they include countries that experienced the greatest increases of 40 years, and some as low as under 5 years.
 
-![Figure 6](../figures/2faceted.png)
+![Figure 6](part2_files/figure-html/cell-4-output-1.png)
 
 High income countries of Europe & Central Asia are clustered near one another in both age dependency and life expectancy change, and upper-middle income countries of the same region also have similar change in age dependency. Countries in the Latin America & Caribbean region also have a relatively substantial decrease in age dependency, most prominent in the region's upper middle income countries. Low income countries, however, seem to have experienced the smallest decrease in age dependency.
 
-In the future, increases in age dependency ratios are predicted to occur in regions with generally increasing populations such as the regions of Sub-Saharan Africa, Middle East, Asia, and Latin America, while established market economies such as those in Europe and Japan will experience increasing age dependency ratios [@harwood2004current]. These trends of age dependency are not necessarily in our data, as countries MENA, Latin America, and Asia are shown to have experienced decreasing age dependency ratios while Sub-Saharan African countries have less of a pronounced change in age dependency ratios. Additionally, within the early stages of demographic transition, life expectancies tend to increase and begin to stagnate in later stages, which is reflected by high income countries having relatively small increases in life expectancy. As part of demographic transition, age of entry into the workforce is also pushed back, while elderly populations can still remain active within the workforce with higher ages of retirement [@pablos2015demographic]. Paired with this fact, countries that are in the intermediate stages of demographic transition are likely to experience decreasing age dependency ratios as the population pyramid narrows and the proportion of the youth population decreases, drastically decreasing the amount of youth dependents while at the same time, elderly populations are also more likely to work and contribute to the workforce. This trend is also reflected in our data, where upper-middle and lower-middle income countries have experienced more significant decreases on average as they have undergone further transition into more developed economies.
+In the future, increases in age dependency ratios are predicted to occur in regions with generally increasing populations such as the regions of Sub-Saharan Africa, Middle East, Asia, and Latin America, while established market economies such as those in Europe and Japan will experience increasing age dependency ratios [@harwood2004current]. These trends of age dependency are not necessarily reflected in our data, as countries in the Middle East, Latin America, and Asia are shown to have experienced decreasing age dependency ratios while Sub-Saharan African countries have less of a pronounced change in age dependency ratios. Additionally, within the early stages of demographic transition, life expectancies tend to increase and begin to stagnate in later stages, which is reflected by high income countries having relatively small increases in life expectancy. As part of demographic transition, age of entry into the workforce is also pushed back, while elderly populations can still remain active within the workforce with higher ages of retirement [@pablos2015demographic]. Paired with this fact, countries that are in the intermediate stages of demographic transition are likely to experience decreasing age dependency ratios as the population pyramid narrows and the proportion of the youth population decreases, drastically decreasing the amount of youth dependents while at the same time, elderly populations are also more likely to work and contribute to the workforce. This trend is also reflected in our data, where upper-middle and lower-middle income countries have experienced more significant decreases on average as they have undergone further transition into more developed economies.
 
 ## Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)
-![Figure 7](../figures/change_skilled_births_vs_infant_mortality.png)
+![Figure 7](../docs/part3_images/change_skilled_births_vs_infant_mortality.png)
 
 To explore the relationship between maternal healthcare access and infant survival outcomes, we plotted the change in births attended by skilled health staff against the change in infant mortality rates between 2000 and 2019.
 
@@ -98,7 +98,7 @@ This visual helps assess whether increases in skilled birth attendance are assoc
 Many countries that experienced an increase in skilled birth attendance from 2000 to 2019 also saw a decrease in infant mortality (or greater change in infant mortality), especially in Sub-Saharan Africa, South Asia, and East Asia & Pacific. This suggests a negative correlation: as more births are attended by skilled health staff, fewer infants die.
 
 
-![Figure 8](../figures/average_infant_mortality_by_region.png)
+![Figure 8](../docs/part3_images/average_infant_mortality_by_region.png)
 
 To understand trends in infant survival across global regions, we plotted average infant mortality rates from 2000 to 2019.
 
@@ -114,7 +114,7 @@ Key insights from this visualization include:
 These patterns reflect global progress in child health and survival, while highlighting persistent disparities across regions. The overall downward trend is consistent with increased access to healthcare and maternal services observed during this time.
 
 
-![Figure 9](../figures/average_skilled_births_by_region.png)
+![Figure 9](../docs/part3_images/average_skilled_births_by_region.png)
 
 To track improvements in maternal healthcare access globally, we visualized the average percentage of births attended by skilled health staff across world regions from 2000 to 2019.
 
