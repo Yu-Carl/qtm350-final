@@ -1,0 +1,162 @@
+// DBML code for entity relationship diagram
+
+Table "1_Adolescent fertility rate (births per 1,000 women ages 15-19).csv" as fertility_rate {
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" real
+  "..." real
+  "2023" real
+}
+
+Table "1_Population growth (annual %).csv" as population_growth {
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" real
+  "..." real
+  "2023" real
+}
+
+Table fertility_vs_population_change {
+  "Country Name" text
+  code text
+  region text
+  income text
+  fertility_rate_change real
+  population_growth_change real
+}
+
+Ref: fertility_rate."Country Code" > "metadata.csv"."Country Code"
+Ref: fertility_vs_population_change.code > "metadata.csv"."Country Code"
+Ref: fertility_vs_population_change."Country Name" > fertility_rate."Country Name"
+Ref: fertility_vs_population_change."Country Name" > population_growth."Country Name"
+Ref: fertility_rate."Country Name" > population_growth."Country Name"
+
+
+Table "2_Age dependency ratio (% of working-age population).csv"  as age_dependency {
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" "real"
+  "..." "real"
+  "2020" "real"
+}
+
+Table "2_Life expectancy at birth, total (years).csv" as life_expectancy{
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" "real"
+  "..." "real"
+  "2020" "real"
+}
+
+Ref: life_vs_dependency_change.code > "metadata.csv"."Country Code"
+Ref: life_vs_dependency_change."Country Name" > life_expectancy."Country Name"
+Ref: life_vs_dependency_change."Country Name" > age_dependency."Country Name"
+Ref: life_expectancy."Country Code" > "metadata.csv"."Country Code"
+Ref: age_dependency."Country Code" > "metadata.csv"."Country Code"
+Ref: life_expectancy."Country Name" > age_dependency."Country Name"
+
+Table "3_Births attended by skilled health staff (% of total).csv" as skilled_births {
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" "real"
+  "..." "real"
+  "2020" "real"
+}
+
+Table "3_Mortality rate, infant (per 1,000 live births).csv"  as infant_mortality {
+  "Country Name" text
+  "Country Code" text [primary key]
+  "Indicator Name" text
+  "Indicator Code" text
+  "1960" "real"
+  "..." "real"
+  "2020" "real"
+}
+
+Table "metadata.csv" {
+  "Country Code" text [primary key]
+  "Region" text
+  "IncomeGroup" text
+  "SpecialNotes" text
+  "TableName" text
+}
+
+  Table life_vs_dependency_change {
+  "Country Name" text
+  code text
+  region text
+  income text
+  life_expectancy_change real
+  age_dependency_change real
+}
+
+
+  Table health_change_summary {
+  "Country Name" text
+  "Country Code" text
+  code text
+  region text
+  infant_mortality_change real
+  skilled_births_change real
+}
+
+Ref: infant_mortality."Country Code" > "metadata.csv"."Country Code"
+Ref: health_change_summary."Country Code" > infant_mortality."Country Code"
+Ref: health_change_summary."Country Code" > skilled_births."Country Code"
+Ref: health_change_summary.code > "metadata.csv"."Country Code"
+
+Table figures {
+  1faceted ".png"
+  1population_across_income ".png"
+  1scatter ".png"
+  2expectancy_across_income ".png"
+  2faceted ".png"
+  2scatter ".png" 
+  average_infant_mortality_by_region ".png"
+  average_skilled_births_by_region ".png"
+  change_skilled_births_vs_infant_mortality ".png"
+}
+
+
+Ref: figures.1faceted > fertility_vs_population_change.income
+Ref: figures.1faceted > fertility_vs_population_change.fertility_rate_change
+Ref: figures.1faceted > fertility_vs_population_change.population_growth_change
+Ref: figures.1faceted > fertility_vs_population_change.region
+Ref: figures.1population_across_income > fertility_vs_population_change.income
+Ref: figures.1population_across_income > fertility_vs_population_change.fertility_rate_change
+Ref: figures.1population_across_income > fertility_vs_population_change.population_growth_change
+Ref: figures.1scatter > fertility_vs_population_change.income
+Ref: figures.1scatter > fertility_vs_population_change.fertility_rate_change
+Ref: figures.1scatter > fertility_vs_population_change.population_growth_change
+Ref: figures.1scatter > fertility_vs_population_change.region
+
+
+Ref: figures.2scatter > life_vs_dependency_change.income
+Ref: figures.2scatter > life_vs_dependency_change.life_expectancy_change
+Ref: figures.2scatter > life_vs_dependency_change.age_dependency_change
+Ref: figures.2scatter > life_vs_dependency_change.region
+Ref: figures.2faceted > life_vs_dependency_change.income
+Ref: figures.2faceted > life_vs_dependency_change.life_expectancy_change
+Ref: figures.2faceted > life_vs_dependency_change.age_dependency_change
+Ref: figures.2faceted > life_vs_dependency_change.region
+Ref: figures.2expectancy_across_income > life_vs_dependency_change.income
+Ref: figures.2expectancy_across_income > life_vs_dependency_change.life_expectancy_change
+Ref: figures.2expectancy_across_income > life_vs_dependency_change.age_dependency_change
+
+Ref: figures.change_skilled_births_vs_infant_mortality > health_change_summary.region
+Ref: figures.change_skilled_births_vs_infant_mortality > health_change_summary.infant_mortality_change
+Ref: figures.change_skilled_births_vs_infant_mortality > health_change_summary.skilled_births_change
+Ref: figures.average_skilled_births_by_region > "3_Mortality rate, infant (per 1,000 live births).csv"."..."
+Ref: figures.average_skilled_births_by_region > health_change_summary.region
+Ref: figures.average_infant_mortality_by_region > "3_Births attended by skilled health staff (% of total).csv"."..."
+Ref: figures.average_infant_mortality_by_region > health_change_summary.region
