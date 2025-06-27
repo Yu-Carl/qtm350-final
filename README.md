@@ -4,6 +4,10 @@
 
 This project explores relationships between key public health indicators and population dynamics using data from the World Bank’s World Development Indicators (WDI) database. Our analysis focuses on how demographic, health, and fertility-related metrics interact across different countries, regions, and income levels. We use SQL for data processing and Python for statistical visualization and analysis.
 
+- [Link to .html report](https://yu-carl.github.io/qtm350-final/report.html)
+- [Link to .pdf report](https://yu-carl.github.io/qtm350-final/report.pdf)
+- [Link to website](https://yu-carl.github.io/qtm350-final/)
+
 ## How to Run the Code
 
 1. **Clone the repository or download the files manually:**
