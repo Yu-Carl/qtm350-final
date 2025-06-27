@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.26)  26 JUN 2025 21:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.6.26)  26 JUN 2025 21:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,24 +999,85 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
+File: part1_files/figure-html/cell-2-output-1.png Graphic file (type bmp)
+<part1_files/figure-html/cell-2-output-1.png>
 
-LaTeX Warning: File `part1_files/figure-html/cell-2-output-1.png' not found on input line 294.
 
-! Unable to load picture or PDF file 'part1_files/figure-html/cell-2-output-1.png'.
+[2]
+File: part1_files/figure-html/cell-3-output-1.png Graphic file (type bmp)
+<part1_files/figure-html/cell-3-output-1.png>
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.665pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.475pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95099pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.66568pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.4755pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 327.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00082pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 329.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 329.
+
+
+[3]
+File: part1_files/figure-html/cell-4-output-1.png Graphic file (type bmp)
+<part1_files/figure-html/cell-4-output-1.png>
+File: part2_files/figure-html/cell-2-output-1.png Graphic file (type bmp)
+<part2_files/figure-html/cell-2-output-1.png>
+
+
+[4]
+File: part2_files/figure-html/cell-3-output-1.png Graphic file (type bmp)
+<part2_files/figure-html/cell-3-output-1.png>
+
+
+[5]
+File: part2_files/figure-html/cell-4-output-1.png Graphic file (type bmp)
+<part2_files/figure-html/cell-4-output-1.png>
+
+
+[6]
+
+LaTeX Warning: File `part3_images/change_skilled_births_vs_infant_mortality.png' not found on input line 479.
+
+! Unable to load picture or PDF file 'part3_images/change_skilled_births_vs_infant_mortality.png'.
 <to be read again> 
                    }
-l.294 ...1_files/figure-html/cell-2-output-1.png}}
+l.479 ..._skilled_births_vs_infant_mortality.png}}
                                                   
 The requested image couldn't be read because
 it was not a recognized image format.
 
  
 Here is how much of TeX's memory you used:
- 23272 strings out of 470482
- 452098 string characters out of 5489533
+ 23449 strings out of 470482
+ 459072 string characters out of 5489533
  1146821 words of memory out of 5000000
- 51267 multiletter control sequences out of 15000+600000
- 630405 words of font info for 71 fonts, out of 8000000 for 9000
+ 51409 multiletter control sequences out of 15000+600000
+ 636161 words of font info for 109 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 108i,7n,114p,10920b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on report.pdf (1 page).
+ 108i,8n,114p,10920b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on report.pdf (6 pages).
