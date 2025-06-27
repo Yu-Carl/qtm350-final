@@ -2,7 +2,28 @@
 title: "Births Attended by Skilled Health Staff vs. Infant Mortality Rate"
 ---
 
-# HEADING
-INSERT CONTENT
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+First plot
+```{python}
+#| echo: false
+
+# note: please leave these code chunks in and use them to display the figures on the website. The report.html deployment on github pages is only able to reference things created within the docs folder and these code chunks will both display the image and generate a copy in the docs/part3_files/figure-html which is needed for the html reference
+from IPython.display import Image
+Image("../figures/change_skilled_births_vs_infant_mortality.png")
+```
+
+2nd plot
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/average_infant_mortality_by_region.png")
+```
+
+3rd plot
+```{python}
+#| echo: false
+from IPython.display import Image
+Image("../figures/average_skilled_births_by_region.png")
+```
