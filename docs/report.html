@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kimberly Cardinale and Carl Yu">
+<meta name="author" content="Kimberly Cardinale (2548934) and Carl Yu (2550364)">
 
-<title>Report – Analyzing Population Dynamics</title>
+<title>A Comprehensive Analysis of Worldwide Population Dynamic Trends – Analyzing Population Dynamics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,18 +104,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-comprehensive-analysis-of-worldwide-population-dynamic-trends" id="toc-a-comprehensive-analysis-of-worldwide-population-dynamic-trends" class="nav-link active" data-scroll-target="#a-comprehensive-analysis-of-worldwide-population-dynamic-trends"><span class="header-section-number">1</span> A Comprehensive Analysis of Worldwide Population Dynamic Trends</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data Description</a></li>
+  <li><a href="#data-analysis-results-and-discussion" id="toc-data-analysis-results-and-discussion" class="nav-link" data-scroll-target="#data-analysis-results-and-discussion">Data Analysis, Results, and Discussion</a>
   <ul class="collapse">
-  <li><a href="#kimberly-cardinale-2548934-and-carl-yu-2550364" id="toc-kimberly-cardinale-2548934-and-carl-yu-2550364" class="nav-link" data-scroll-target="#kimberly-cardinale-2548934-and-carl-yu-2550364"><span class="header-section-number">1.1</span> Kimberly Cardinale (2548934) and Carl Yu (2550364)</a></li>
+  <li><a href="#pair-1-adolescent-fertility-rate-births-per-1000-women-ages-15-19-and-population-growth-annual" id="toc-pair-1-adolescent-fertility-rate-births-per-1000-women-ages-15-19-and-population-growth-annual" class="nav-link" data-scroll-target="#pair-1-adolescent-fertility-rate-births-per-1000-women-ages-15-19-and-population-growth-annual">Pair 1: Adolescent Fertility Rate (births per 1000 women ages 15-19) and Population Growth (annual %)</a></li>
+  <li><a href="#pair-2-age-dependency-ratio-of-working-age-population-and-life-expectancy-at-birth-total-years" id="toc-pair-2-age-dependency-ratio-of-working-age-population-and-life-expectancy-at-birth-total-years" class="nav-link" data-scroll-target="#pair-2-age-dependency-ratio-of-working-age-population-and-life-expectancy-at-birth-total-years">Pair 2: Age dependency ratio (% of working-age population) and life expectancy at birth, total (years)</a></li>
+  <li><a href="#pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" id="toc-pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" class="nav-link" data-scroll-target="#pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births">Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)</a></li>
   </ul></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
-  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description"><span class="header-section-number">3</span> Data Description</a></li>
-  <li><a href="#data-analysis-results-and-discussion" id="toc-data-analysis-results-and-discussion" class="nav-link" data-scroll-target="#data-analysis-results-and-discussion"><span class="header-section-number">4</span> Data Analysis, Results, and Discussion</a>
-  <ul class="collapse">
-  <li><a href="#pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" id="toc-pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" class="nav-link" data-scroll-target="#pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births"><span class="header-section-number">4.1</span> Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)</a></li>
-  </ul></li>
-  <li><a href="#conclusion-and-further-reading" id="toc-conclusion-and-further-reading" class="nav-link" data-scroll-target="#conclusion-and-further-reading"><span class="header-section-number">5</span> Conclusion and Further Reading</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  <li><a href="#conclusion-and-further-reading" id="toc-conclusion-and-further-reading" class="nav-link" data-scroll-target="#conclusion-and-further-reading">Conclusion and Further Reading</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -104,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Report</h1>
+<h1 class="title">A Comprehensive Analysis of Worldwide Population Dynamic Trends</h1>
 </div>
 
 
@@ -114,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Kimberly Cardinale and Carl Yu </p>
+             <p>Kimberly Cardinale (2548934) and Carl Yu (2550364) </p>
           </div>
   </div>
     
@@ -127,18 +144,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="a-comprehensive-analysis-of-worldwide-population-dynamic-trends" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> A Comprehensive Analysis of Worldwide Population Dynamic Trends</h1>
-<section id="kimberly-cardinale-2548934-and-carl-yu-2550364" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="kimberly-cardinale-2548934-and-carl-yu-2550364"><span class="header-section-number">1.1</span> Kimberly Cardinale (2548934) and Carl Yu (2550364)</h2>
-</section>
-</section>
-<section id="introduction" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
+<hr>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>In this project, we examine the relationships between key indicators of public health and population dynamics across countries using data from the World Bank’s World Development Indicators (WDI) database. Our goal is to understand how certain demographic, health, and fertility-related measures are related, and what patterns emerge across different regions or income levels over time.</p>
 </section>
-<section id="data-description" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Data Description</h1>
+<section id="data-description" class="level1">
+<h1>Data Description</h1>
 <p>To guide our analysis, we grouped six indicators into three pairs:</p>
 <ol type="1">
 <li>Adolescent fertility rate (births per 1,000 women ages 15–19) and population growth (annual %) to explore how youth fertility might contribute to overall population change.</li>
@@ -163,14 +175,45 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>By integrating SQL for data cleaning and transformation and Python for visualization and modeling, we aim to show meaningful patterns and trends within these pairs. Our analysis also considers regional and income-level differences where relevant. Through this approach, we hope to provide insights into how social and healthcare factors contribute to broader population and health outcomes worldwide.</p>
 </section>
-<section id="data-analysis-results-and-discussion" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Data Analysis, Results, and Discussion</h1>
-<section id="pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births"><span class="header-section-number">4.1</span> Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)</h2>
+<section id="data-analysis-results-and-discussion" class="level1">
+<h1>Data Analysis, Results, and Discussion</h1>
+<section id="pair-1-adolescent-fertility-rate-births-per-1000-women-ages-15-19-and-population-growth-annual" class="level2">
+<h2 class="anchored" data-anchor-id="pair-1-adolescent-fertility-rate-births-per-1000-women-ages-15-19-and-population-growth-annual">Pair 1: Adolescent Fertility Rate (births per 1000 women ages 15-19) and Population Growth (annual %)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figures/1scatter.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1</figcaption>
+</figure>
+</div>
+<p>We first plotted the change for all countries across all region and income statuses for adolescent fertility rate and population from 1960-2023, with each point representing a country to provide a broad visualization and see if there are any overall trends.</p>
+<p>At the global level, both adolescent fertility rate and population growth have been declining from 1960-2023. The regions of Europe &amp; Central Asia as well as East Asia &amp; Pacific, primarily made up of HICs and LMICs, have experienced the smallest declines in adolescent fertility rate from. Otherwise, the rest of the regions and economic statuses emcompass a relatively wide range of changes, albeit negative, in both metrics.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figures/1population_across_income.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2</figcaption>
+</figure>
+</div>
+<p>To investigate trends population growth, we plotted a distribution of change in population growth rates according to countries’ income level, independent of region<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>On average, low income countries have the experienced the highest change population growth rates, and is the only income group that experienced a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023, with upper middle income countries on average having the greatest decline in population growth.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../figures/1faceted.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 3</figcaption>
+</figure>
+</div>
+<p>All income groups seem to have a similar spread of change in adolescent fertility rate with most countries experiencing a decline in fertility rate since 1960, though several high income countries from the MENA region seem have experienced exceptionally large drops. Otherwise, the overall trends exhibited low income countries are relatively similar that of lower-middle income countries, though low-middle income countries on average have experienced a slight decrease in their population growth rates as well as adolescent fertility rates.</p>
+<p>A systematic analysis for the Global Burden of Disease Study in 2017 on near-global population and fertility patterns discovered that fertility rates for ages 15-19 tend to decrease as countries develop, though countries that have similar socio-demographic index scores can also exhibit drastically different adolescent fertility rates <span class="citation" data-cites="Murray2018">(<a href="#ref-Murray2018" role="doc-biblioref">Murray et al. 2018</a>)</span>. Using income status as an rough indicator of development and assuming that countries have undergone development from the 1960s to 2023, it would be plausible for low income and low-middle income countries to exhibit the most significant decreases in adolescent fertility rate. This trend seems to be largely supported by our data, where high income countries have experienced a smaller decrease on average in terms of adolescent fertility rates relative to both low income and low-middle income countries, which have more significant decreases. At the same time, due to demographic transition, low income countries have experienced the largest increase in ppopulation growth rates. High income countries also have the second highest change in population growth (albeit still negative), which is not necessarily attributed to high adolescent fertility rates, but likely due to other phenomena such as the arrival of migrants from low/low-middle income countries.</p>
+</section>
+<section id="pair-2-age-dependency-ratio-of-working-age-population-and-life-expectancy-at-birth-total-years" class="level2">
+<h2 class="anchored" data-anchor-id="pair-2-age-dependency-ratio-of-working-age-population-and-life-expectancy-at-birth-total-years">Pair 2: Age dependency ratio (% of working-age population) and life expectancy at birth, total (years)</h2>
+<p><img src="../figures/2scatter.png" class="img-fluid" alt="Figure 4"> <img src="../figures/2expectancy_across_income.png" class="img-fluid" alt="Figure 5"> <img src="../figures/2faceted.png" class="img-fluid" alt="Figure 6"></p>
+</section>
+<section id="pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births" class="level2">
+<h2 class="anchored" data-anchor-id="pair-3-births-attended-by-skilled-health-staff-of-total-and-infant-mortality-rate-per-1000-live-births">Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../figures/change_skilled_births_vs_infant_mortality.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 1</figcaption>
+<figcaption>Figure 7</figcaption>
 </figure>
 </div>
 <p>To explore the relationship between maternal healthcare access and infant survival outcomes, we plotted the change in births attended by skilled health staff against the change in infant mortality rates between 2000 and 2019.</p>
@@ -185,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../figures/average_infant_mortality_by_region.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 2</figcaption>
+<figcaption>Figure 8</figcaption>
 </figure>
 </div>
 <p>To understand trends in infant survival across global regions, we plotted average infant mortality rates from 2000 to 2019.</p>
@@ -201,7 +244,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../figures/average_skilled_births_by_region.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 3</figcaption>
+<figcaption>Figure 9</figcaption>
 </figure>
 </div>
 <p>To track improvements in maternal healthcare access globally, we visualized the average percentage of births attended by skilled health staff across world regions from 2000 to 2019.</p>
@@ -216,20 +259,32 @@ ul.task-list li input[type="checkbox"] {
 <p>This visualization highlights regional disparities in maternal healthcare but also showcases meaningful global progress, particularly in regions with historically lower access to skilled care during childbirth.</p>
 </section>
 </section>
-<section id="conclusion-and-further-reading" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Conclusion and Further Reading</h1>
+<section id="conclusion-and-further-reading" class="level1">
+<h1>Conclusion and Further Reading</h1>
 <p>This project investigates the relationships between public health and population dynamics using World Bank data to reveal patterns across regions and income levels. Focusing on three indicator pairs, we analyze how demographic and health factors interact, including adolescent fertility rate and population growth, age dependency ratio and life expectancy at birth, and births attended by skilled health staff and infant mortality rates.</p>
-<p>For pair 3, the analysis shows that increased skilled birth attendance is strongly associated with declines in infant mortality globally, with significant progress in regions like Sub-Saharan Africa and South Asia despite ongoing disparities. A systematic review of 41 African countries demonstrated that a 10% increase in skilled birth attendance corresponded with a 6% reduction in neonatal mortality, highlighting the critical impact of skilled healthcare during childbirth on infant survival (Berhan and Berhan, 2014). Similarly, a national survey in Lesotho found that births not attended by skilled health personnel had twice the risk of neonatal death compared to those with skilled attendants, directly supporting the finding that increased skilled birth attendance is linked to lower infant mortality rates (Baruwa et al, 2021).</p>
-</section>
-<section id="references" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
-<p>Baruwa, O. J., Amoateng, A. Y., &amp; Mkwananzi, S. (2021). Association between type of birth attendants and neonatal mortality: Evidence from a National survey. African Health Sciences, 21(4), 1870-6.</p>
-<p>Berhan, Y., &amp; Berhan, A. (2014). Skilled health personnel attended delivery as a proxy indicator for maternal and perinatal mortality: a systematic review. Ethiopian journal of health sciences, 24, 69-80.</p>
+<p>For pair 3, the analysis shows that increased skilled birth attendance is strongly associated with declines in infant mortality globally, with significant progress in regions like Sub-Saharan Africa and South Asia despite ongoing disparities. A systematic review of 41 African countries demonstrated that a 10% increase in skilled birth attendance corresponded with a 6% reduction in neonatal mortality, highlighting the critical impact of skilled healthcare during childbirth on infant survival <span class="citation" data-cites="berhan2014skilled">(<a href="#ref-berhan2014skilled" role="doc-biblioref">Berhan and Berhan 2014</a>)</span>. Similarly, a national survey in Lesotho found that births not attended by skilled health personnel had twice the risk of neonatal death compared to those with skilled attendants, directly supporting the finding that increased skilled birth attendance is linked to lower infant mortality rates <span class="citation" data-cites="baruwa2021association">(<a href="#ref-baruwa2021association" role="doc-biblioref">Baruwa, Amoateng, and Mkwananzi 2021</a>)</span>.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-baruwa2021association" class="csl-entry" role="listitem">
+Baruwa, Ololade Julius, Acheampong Yaw Amoateng, and Sibusiso Mkwananzi. 2021. <span>“Association Between Type of Birth Attendants and Neonatal Mortality: Evidence from a National Survey.”</span> <em>African Health Sciences</em> 21 (4): 1870–76.
+</div>
+<div id="ref-berhan2014skilled" class="csl-entry" role="listitem">
+Berhan, Yifru, and Asres Berhan. 2014. <span>“Skilled Health Personnel Attended Delivery as a Proxy Indicator for Maternal and Perinatal Mortality: A Systematic Review.”</span> <em>Ethiopian Journal of Health Sciences</em> 24: 69–80.
+</div>
+<div id="ref-Murray2018" class="csl-entry" role="listitem">
+Murray, Christopher J L, Charlton S K H Callender, Xie Rachel Kulikoff, Vinay Srinivasan, Degu Abate, Kalkidan Hassen Abate, Solomon M Abay, et al. 2018. <span>“Population and Fertility by Age and Sex for 195 Countries and Territories, 1950–2017: A Systematic Analysis for the Global Burden of Disease Study 2017.”</span> <em>The Lancet</em> 392 (10159): 1995–2051. <a href="https://doi.org/10.1016/s0140-6736(18)32278-5">https://doi.org/10.1016/s0140-6736(18)32278-5</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Data for population growth in 1960 was not available, so change in population growth rate was represented by 2023 annual rate subtracted by the 1961 annual rate.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

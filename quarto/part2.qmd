@@ -18,7 +18,7 @@ from IPython.display import Image
 Image("../figures/2expectancy_across_income.png")
 ```
 
-On average, high income countries have experienced the smallest increase while lower middle income countries have experienced the greatest increase on average in terms of life expectancy.
+High income countries experienced relatively small increase in life expectancy on average while lower-middle income countries experienced the most significant increase in life expectancy. Low income countries experienced an increase just slightly shy of that of lower-middle income countries and ahve the narrowest distribution of change. However, high income and upper-middle income countries had the widest range in life expectancy changes—they include countries that experienced the greatest increases of 40 years, and some as low as under 5 years.
 
 ```{python}
 #| echo: false
@@ -26,4 +26,7 @@ from IPython.display import Image
 Image("../figures/2faceted.png")
 ```
 
-All income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa.
+High income countries of Europe & Central Asia are clustered near one another in both age dependency and life expectancy change, and upper-middle income countries of the same region also have similar change in age dependency. Countries in the Latin America & Caribbean region also have a relatively substantial decrease in age dependency, most prominent in the region's upper middle income countries. Low income countries, however, seem to have experienced the smallest decrease in age dependency.
+
+In the future, increases in age dependency ratios are predicted to occur in regions with generally increasing populations such as the regions of Sub-Saharan Africa, Middle East, Asia, and Latin America, while established market economies such as those in Europe and Japan will experience increasing age dependency ratios [@harwood2004current]. These trends of age dependency are not necessarily in our data, as countries MENA, Latin America, and Asia are shown to have experienced decreasing age dependency ratios while Sub-Saharan African countries have less of a pronounced change in age dependency ratios. Additionally, within the early stages of demographic transition, life expectancies tend to increase and begin to stagnate in later stages, which is reflected by high income countries having relatively small increases in life expectancy. As part of demographic transition, age of entry into the workforce is also pushed back, while elderly populations can still remain active within the workforce with higher ages of retirement [@pablos2015demographic]. Paired with this fact, countries that are in the intermediate stages of demographic transition are likely to experience decreasing age dependency ratios as the population pyramid narrows and the proportion of the youth population decreases, drastically decreasing the amount of youth dependents while at the same time, elderly populations are also more likely to work and contribute to the workforce. This trend is also reflected in our data, where upper-middle and lower-middle income countries have experienced more significant decreases on average as they have undergone further transition into more developed economies.
+

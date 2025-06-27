@@ -19,7 +19,9 @@ from IPython.display import Image
 Image("../figures/1population_across_income.png")
 ```
 
-On average, low income countries have the experienced the highest change population growth rates, and is the only income group that had a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023, with upper middle income countries on average having the greatest decline in population growth. Something something demographic transition
+On average, low income countries have the experienced the highest change population growth rates, and is the only income group that experienced a positive change in population growth rates. High, upper middle, and lower middle income countries all experienced negative changes in population growth rates from 1961-2023[^1], with upper middle income countries on average having the greatest decline in population growth.
+
+[^1]: Data for population growth in 1960 was not available, so change in population growth rate was represented by 2023 annual rate subtracted by the 1961 annual rate.
 
 ```{python}
 #| echo: false
@@ -27,4 +29,6 @@ from IPython.display import Image
 Image("../figures/1faceted.png")
 ```
 
-All income groups seem to have a similar spread of change in fertility rate, though high income countries seem to have several countries with exceptionally low values from the MENA region. Otherwise, the low income countries look similar lower middle income, though with a slightly higher change in population growth rate and consisting primarily of countries in Sub-Saharan Africa.
+All income groups seem to have a similar spread of change in adolescent fertility rate with most countries experiencing a decline in fertility rate since 1960, though several high income countries from the MENA region seem have experienced exceptionally large drops. Otherwise, the overall trends exhibited low income countries are relatively similar that of lower-middle income countries, though low-middle income countries on average have experienced a slight decrease in their population growth rates as well as adolescent fertility rates.
+
+A systematic analysis for the Global Burden of Disease Study in 2017 on near-global population and fertility patterns discovered that fertility rates for ages 15-19 tend to decrease as countries develop, though countries with similar socio-demographic index scores also exhibited drastically different adolescent fertility rates [@Murray2018]. Using income status as an rough indicator of development and assuming that countries have undergone development from the 1960s to 2023, it would be plausible for low income and low-middle income countries to exhibit the most significant decreases in adolescent fertility rate. This trend seems to be largely supported by our data, where high income countries have experienced a smaller decrease on average in terms of adolescent fertility rates relative to both low income and low-middle income countries, which have more significant decreases. At the same time, due to demographic transition, low income countries have experienced the largest increase in ppopulation growth rates. High income countries also have the second highest change in population growth (albeit still negative), which is not necessarily attributed to high adolescent fertility rates. As adolescent births are just a facet of a country's overall population growth, high income countries' increase in population growth rates can likely be attributed to not only births by older adults, but also to other phenomena such as the arrival of migrants countries belonging to different income statuses.
