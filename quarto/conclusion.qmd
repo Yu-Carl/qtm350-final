@@ -1,5 +1,6 @@
 ---
 title: "Conclusion and further readings"
+bibliography: references.bib
 ---
 
 This project investigates the relationships between public health and population dynamics using World Bank data to reveal patterns across regions and income levels. Focusing on three indicator pairs, we analyze how demographic and health factors interact, including adolescent fertility rate and population growth, age dependency ratio and life expectancy at birth, and births attended by skilled health staff and infant mortality rates.

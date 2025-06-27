@@ -1,29 +1,62 @@
 ---
 title: "Births Attended by Skilled Health Staff vs. Infant Mortality Rate"
+bibliography: references.bib
 ---
 
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-First plot
 ```{python}
 #| echo: false
-
-# note: please leave these code chunks in and use them to display the figures on the website. The report.html deployment on github pages is only able to reference things created within the docs folder and these code chunks will both display the image and generate a copy in the docs/part3_files/figure-html which is needed for the html reference
 from IPython.display import Image
 Image("../figures/change_skilled_births_vs_infant_mortality.png")
 ```
 
-2nd plot
+To explore the relationship between maternal healthcare access and infant survival outcomes, we plotted the change in births attended by skilled health staff against the change in infant mortality rates between 2000 and 2019.
+
+Each point in the scatterplot represents a region, color-coded.
+
+We used the following metrics:
+
+- X-axis: Change in the percentage of births attended by skilled health staff (%)
+- Y-axis: Change in infant mortality (per 1,000 live births)
+
+This visual helps assess whether increases in skilled birth attendance are associated with better infant health outcomes, and whether this trend is consistent across regions.
+
+Many countries that experienced an increase in skilled birth attendance from 2000 to 2019 also saw a decrease in infant mortality (or greater change in infant mortality), especially in Sub-Saharan Africa, South Asia, and East Asia & Pacific. This suggests a negative correlation: as more births are attended by skilled health staff, fewer infants die.
+
 ```{python}
 #| echo: false
 from IPython.display import Image
 Image("../figures/average_infant_mortality_by_region.png")
 ```
 
-3rd plot
+To understand trends in infant survival across global regions, we plotted average infant mortality rates from 2000 to 2019.
+
+Each line represents a different world region, showing changes in infant deaths per 1,000 live births over time.
+
+Key insights from this visualization include:
+
+- All regions experienced a decline in infant mortality rates over the 20-year period.
+- Sub-Saharan Africa had the highest rates throughout, though it also saw significant improvement—from around 80 deaths per 1,000 live births in 2000 to below 50 by 2019.
+- South Asia also made significant progress closing the gap with regions that have lower infant mortality rates.
+- Regions like Europe & Central Asia and North America maintained the lowest infant mortality rates, with steady improvements, though the overall changes were smaller.
+
+These patterns reflect global progress in child health and survival, while highlighting persistent disparities across regions. The overall downward trend is consistent with increased access to healthcare and maternal services observed during this time.
+
 ```{python}
 #| echo: false
 from IPython.display import Image
 Image("../figures/average_skilled_births_by_region.png")
 ```
+
+To track improvements in maternal healthcare access globally, we visualized the average percentage of births attended by skilled health staff across world regions from 2000 to 2019.
+
+Each line represents a region, illustrating how skilled birth attendance has evolved over time.
+
+Key insights from the figure include:
+
+- Regions like Europe & Central Asia and North America consistently maintained near-universal skilled birth attendance, with rates close to 100% .
+- East Asia & Pacific, Latin America & Caribbean, and Middle East & North Africa also exhibited high and relatively stable skilled birth rates, typically above 90%.
+- Sub-Saharan Africa and South Asia, which started with the lowest skilled birth attendance rates in 2000, showed substantial improvement over the two decades. South Asia, in particular, saw an increase from around 35% to over 70%.
+
+The upward trends in these regions reflect significant investments in maternal health services and broader healthcare access.
+
+This visualization highlights regional disparities in maternal healthcare but also showcases meaningful global progress, particularly in regions with historically lower access to skilled care during childbirth.

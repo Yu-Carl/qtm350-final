@@ -39,6 +39,7 @@ By integrating SQL for data cleaning and transformation and Python for visualiza
 # Data Analysis, Results, and Discussion
 
 ## Pair 1: Adolescent Fertility Rate (births per 1000 women ages 15-19) and Population Growth (annual %)
+
 ![Figure 1](part1_files/figure-html/cell-2-output-1.png)
 
 We first plotted the change for all countries across all region and income statuses for adolescent fertility rate and population from 1960-2023, with each point representing a country to provide a broad visualization and assess any overall trends.
@@ -82,6 +83,7 @@ High income countries of Europe & Central Asia are clustered near one another in
 In the future, increases in age dependency ratios are predicted to occur in regions with generally increasing populations such as the regions of Sub-Saharan Africa, Middle East, Asia, and Latin America, while established market economies such as those in Europe and Japan will experience increasing age dependency ratios [@harwood2004current]. These trends of age dependency are not necessarily reflected in our data, as countries in the Middle East, Latin America, and Asia are shown to have experienced decreasing age dependency ratios while Sub-Saharan African countries have less of a pronounced change in age dependency ratios. Additionally, within the early stages of demographic transition, life expectancies tend to increase and begin to stagnate in later stages, which is reflected by high income countries having relatively small increases in life expectancy. As part of demographic transition, age of entry into the workforce is also pushed back, while elderly populations can still remain active within the workforce with higher ages of retirement [@pablos2015demographic]. Paired with this fact, countries that are in the intermediate stages of demographic transition are likely to experience decreasing age dependency ratios as the population pyramid narrows and the proportion of the youth population decreases, drastically decreasing the amount of youth dependents while at the same time, elderly populations are also more likely to work and contribute to the workforce. This trend is also reflected in our data, where upper-middle and lower-middle income countries have experienced more significant decreases on average as they have undergone further transition into more developed economies.
 
 ## Pair 3: Births attended by skilled health staff (% of total) and infant mortality rate (per 1,000 live births)
+
 ![Figure 7](part3_files/figure-html/cell-2-output-1.png)
 
 To explore the relationship between maternal healthcare access and infant survival outcomes, we plotted the change in births attended by skilled health staff against the change in infant mortality rates between 2000 and 2019.
